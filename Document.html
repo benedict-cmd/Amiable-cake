@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/frontpage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/styling.css">
+</head>
+<body>
+    <p class="INTRO"><b>Amiable Cake &amp; Chops <span class="span">ARIVES FAST &amp; FRESH</span></b></p>
+    <div class="body">
+        <div class="nav-div">
+        <a class="amiable" href="http://127.0.0.1:5500/frontpage.html">Amiable</a>
+        <nav>
+            <a class="navigate1" href="http://127.0.0.1:5500/frontpage.html">Home</a>
+            <a class="navigate2" href="http://127.0.0.1:5500/frontpage.html">Product</a>
+            <a class="navigate3" href="http://127.0.0.1:5500/frontpage.html">Contact</a>
+        </nav>
+    </div>
+        <!-- lux cakee -->
+         <div>
+            <h1 class="luxry">Luxury Cakes &amp; Delicious Chops</h1>
+            <p class="taste">Experience Taste Like Never Before  </p>
+            <button class="order-button">Order Now</button>
+         </div>
+         <footer>
+           <h1> . Why Choose Us .</h1>
+            <div class="footer-parent-div">
+                <div id="footer-div"><button class="but">Premium</button></div>
+            <div id="footer-div"><button class="but">Fast Delivery</button></div>
+            <div id="footer-div"> <button class="but">Made With Love</button></div>
+            </div>
+            <!-- <img src="two.jpg" alt=""> -->
+         </footer>
+         <div class="down">@2026 Amiable Cake &amp; Chop</div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
